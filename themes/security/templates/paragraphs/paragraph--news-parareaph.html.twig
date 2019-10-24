@@ -1,0 +1,70 @@
+{% set pos = content.field_services_block_condition['#items'].getString() %}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      {% if pos == 0 %}
+      <div class="container-fluid">
+       <div class="row p-lg-5">
+         <div class="col-lg-4 p-lg-5 p-5 order-lg-1 order-2">
+           <div class="">
+             {{ content.field_views_paragraph }}
+           </div>
+           <div class="py-5">
+<!--             <h5 class="underline">Contact Us</h5>-->
+             {{ content.field_contact_block }}
+           </div>
+         </div>
+         <div class="col-lg-8 p-lg-5 p-5 order-lg-2 order-1">
+           <div class="text-dark h2 font-weight-bold py-5">
+             {{ content.field_contents_title }}
+           </div>
+           <div class="text-warning left">
+             {{ content.field_author_info }}
+           </div>
+             {{ content.field_contents_body }}
+           <div class="">
+             <img src="{{ content.field_content_pic[0] }}" width="100%">
+           </div>
+         </div>
+       </div>
+      </div>
+    {% endif %}
+    {% if pos == 1 %}
+      <div class="container-fluid">
+       <div class="row p-lg-5">
+         <div class="col-lg-8 p-lg-5 p-5">
+           <div class="text-dark h2 font-weight-bold py-5">
+             {{ content.field_contents_title }}
+           </div>
+           <div class="text-warning left">
+             {{ content.field_author_info }}
+           </div>
+             {{ content.field_contents_body }}
+           <div class="">
+             <img src="{{ content.field_content_pic[0] }}" width="100%">
+           </div>
+         </div>
+         <div class="col-lg-4 p-lg-5 p-5">
+           <div class="">
+             {{ content.field_views_paragraph }}
+           </div>
+           <div class="py-5">
+<!--             <h5 class="underline">Contact Us</h5>-->
+             {{ content.field_contact_block }}
+           </div>
+         </div>
+       </div>
+      </div>
+    {% endif %}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

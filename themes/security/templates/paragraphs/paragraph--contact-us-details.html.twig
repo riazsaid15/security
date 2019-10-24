@@ -1,0 +1,47 @@
+{% set pos = 1 %}
+
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      {% if pos == 0 %}
+      <div class="container">
+      <div class="row">
+        <div class="{{ css }}">
+          {{ content.field_image_1}}
+        </div>
+        <div class="{{ css }}" style="background-color:{{ content.field_bg_color.0 }};">
+          {{ content.field_image_text }}
+        </div>
+        </div>
+      </div>
+    {% endif %}
+    {% if pos == 1 %}
+      <div class="container-fluid">
+       <div class="row p-md-5">
+         <div class="col-lg-8 p-md-5 p-3">
+           <h2 class="font-weight-bold mb-3 "><span class="text-warning">CONTACT</span> US</h2>
+           {{ content.field_contact_us_form }}
+         </div>
+         <div class="col-lg-4 p-md-5 p-sm-2">
+           <div class="">
+             {{ content.field_contact_us_address }}
+           </div>
+         </div>
+       </div>
+      <div class="p-0 m-0">
+        {{ content.field_contact_us_map}}
+      </div>
+      </div>
+    {% endif %}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

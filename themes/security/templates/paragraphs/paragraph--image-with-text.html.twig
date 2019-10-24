@@ -1,0 +1,45 @@
+{% set pos = 1 %}
+{% set css = content.field_css_['#items'].getString() %}
+
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      {% if pos == 0 %}
+      <div class="container">
+      <div class="row">
+        <div class="{{ css }}">
+          {{ content.field_image_1}}
+        </div>
+        <div class="{{ css }}" style="background-color:{{ content.field_bg_color.0 }};">
+          {{ content.field_image_text }}
+
+        </div>
+        </div>
+      </div>
+    {% endif %}
+    {% if pos == 1 %}
+      <div class="container-fluid">
+      <div class="row p-md-5">
+        <div class="col-md-6 p-md-5 p-4" style="background-color:{{ content.field_bg_color.0 }};">
+         <h2 class="py-1">{{ content.field_about_text }}</h2>
+          <p class="py-1">{{ content.field_about_body }}</p>
+         <button type="button" class="btn btn-warning btn-xl my-3">{{ content.field_about_link }}</button>
+        </div>
+        <div class="col-md-6 p-md-5 p-4">
+          <div class="image-style">{{ content.field_about_image}}
+        </div>
+      </div>
+      </div>
+    {% endif %}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

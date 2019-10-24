@@ -1,0 +1,36 @@
+{%
+  set classes = [
+    'paragraph',
+    'cont',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      
+  <header class="masthead" style="background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url('{{ content.field_hero_image[0] }}');">
+    <div class="container h-100">
+      <div class="row h-100  align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end pt-5">
+          <h1 class="text-uppercase text-white font-weight-bold pt-5">{{ content.field_hero_titlte }}</h1>
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <h5 class="text-white-75 text-center p-3 font-weight-light text-white">{{ content.field_hero_body }}</h5>
+          <div class="col-lg-8 mx-auto">
+            {{ content.field_button_link }}
+          </div> 
+       </div>
+        
+        
+      </div>
+    </div>
+  </header>      
+      
+      
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+
