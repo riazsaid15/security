@@ -1,0 +1,6 @@
+status: 0
+pattern: 'Contact Us'
+escape: true
+dependencies:
+  config:
+    - contact.form.feedback

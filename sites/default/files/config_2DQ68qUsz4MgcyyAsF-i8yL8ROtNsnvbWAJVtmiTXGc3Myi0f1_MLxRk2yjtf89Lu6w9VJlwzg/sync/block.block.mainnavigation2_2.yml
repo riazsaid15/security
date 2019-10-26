@@ -1,0 +1,25 @@
+uuid: 3c6e4234-b3bb-4633-8f2f-ef09bff9efac
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main-navigation-2
+  module:
+    - system
+  theme:
+    - security
+id: mainnavigation2_2
+theme: security
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:main-navigation-2'
+settings:
+  id: 'system_menu_block:main-navigation-2'
+  label: 'Main navigation 2'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 8d309771-986b-4480-99a2-de8404bd04a2
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us_details
+label: 'Contact Us details'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

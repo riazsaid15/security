@@ -1,0 +1,25 @@
+uuid: 3eaa672e-1d97-4dec-a539-61b0aa1b42e3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5bdf1863-d600-4e00-87fd-10bbfef0f8e0'
+  module:
+    - block_content
+  theme:
+    - security
+id: footerfourth
+theme: security
+region: footer_fourth
+weight: -11
+provider: null
+plugin: 'block_content:5bdf1863-d600-4e00-87fd-10bbfef0f8e0'
+settings:
+  id: 'block_content:5bdf1863-d600-4e00-87fd-10bbfef0f8e0'
+  label: 'footer fourth '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

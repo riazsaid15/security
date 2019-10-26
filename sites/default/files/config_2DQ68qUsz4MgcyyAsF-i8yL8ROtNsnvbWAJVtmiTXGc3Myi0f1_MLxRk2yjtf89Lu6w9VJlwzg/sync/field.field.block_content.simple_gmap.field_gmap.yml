@@ -1,0 +1,19 @@
+uuid: d5b8c767-6567-49d4-bcbb-b70785ce866f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.simple_gmap
+    - field.storage.block_content.field_gmap
+id: block_content.simple_gmap.field_gmap
+field_name: field_gmap
+entity_type: block_content
+bundle: simple_gmap
+label: gmap
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

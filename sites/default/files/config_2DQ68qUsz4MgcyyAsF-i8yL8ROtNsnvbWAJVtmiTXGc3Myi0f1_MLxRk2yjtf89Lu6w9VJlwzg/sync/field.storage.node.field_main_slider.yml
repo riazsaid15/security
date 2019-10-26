@@ -1,0 +1,21 @@
+uuid: 791b7cb4-146f-4def-9f5d-43e6ebebcd73
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - views
+    - viewsreference
+id: node.field_main_slider
+field_name: field_main_slider
+entity_type: node
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

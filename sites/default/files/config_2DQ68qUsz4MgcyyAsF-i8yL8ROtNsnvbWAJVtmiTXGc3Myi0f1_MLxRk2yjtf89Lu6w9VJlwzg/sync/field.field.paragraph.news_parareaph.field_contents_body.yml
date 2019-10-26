@@ -1,0 +1,21 @@
+uuid: 72c2fbb3-590a-481f-b9c7-e6bb9c2a1b77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contents_body
+    - paragraphs.paragraphs_type.news_parareaph
+  module:
+    - text
+id: paragraph.news_parareaph.field_contents_body
+field_name: field_contents_body
+entity_type: paragraph
+bundle: news_parareaph
+label: 'Contents Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

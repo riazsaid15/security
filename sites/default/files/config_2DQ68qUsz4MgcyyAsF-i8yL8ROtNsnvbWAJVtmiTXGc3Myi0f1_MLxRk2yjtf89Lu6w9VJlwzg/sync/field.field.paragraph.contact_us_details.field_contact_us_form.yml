@@ -1,0 +1,22 @@
+uuid: 76d54b8f-c90c-4fd6-a2e8-0ffa299dea1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_us_form
+    - paragraphs.paragraphs_type.contact_us_details
+  module:
+    - block_field
+id: paragraph.contact_us_details.field_contact_us_form
+field_name: field_contact_us_form
+entity_type: paragraph
+bundle: contact_us_details
+label: 'Contact Us form'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids: {  }
+field_type: block_field

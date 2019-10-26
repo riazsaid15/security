@@ -1,0 +1,23 @@
+uuid: 8bd1a736-cbb3-48c7-8548-5a0c16011ed8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.cta
+  module:
+    - link
+id: paragraph.cta.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: cta
+label: link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

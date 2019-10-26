@@ -1,0 +1,58 @@
+uuid: 67db2e83-7a19-44b8-bc96-6099f02478ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_image_text
+    - node.type.about_page
+    - paragraphs.paragraphs_type.image_with_text
+  module:
+    - entity_reference_revisions
+id: node.about_page.field_about_image_text
+field_name: field_about_image_text
+entity_type: node
+bundle: about_page
+label: 'About image text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image_with_text: image_with_text
+    target_bundles_drag_drop:
+      contact_us_details:
+        weight: 11
+        enabled: false
+      content_image:
+        weight: 12
+        enabled: false
+      content_page_banner:
+        weight: 13
+        enabled: false
+      cta:
+        weight: 14
+        enabled: false
+      hero_image:
+        weight: 15
+        enabled: false
+      image_with_text:
+        enabled: true
+        weight: 16
+      latest_accordion:
+        weight: 17
+        enabled: false
+      news_collection_paragraph:
+        weight: 18
+        enabled: false
+      news_parareaph:
+        weight: 19
+        enabled: false
+      views_paragraph:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,8 @@
+uuid: 6b7aca8d-a3b0-4e64-bcf1-8b8ba430855b
+langcode: en
+status: true
+dependencies: {  }
+id: main-navigation-2
+label: 'Main navigation 2'
+description: ''
+locked: false

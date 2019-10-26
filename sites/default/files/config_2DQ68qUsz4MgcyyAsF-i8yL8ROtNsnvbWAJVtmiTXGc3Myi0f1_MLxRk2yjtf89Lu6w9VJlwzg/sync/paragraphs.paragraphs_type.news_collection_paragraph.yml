@@ -1,0 +1,9 @@
+uuid: c47dda6f-626b-4858-a93f-4ad12a1f86df
+langcode: en
+status: true
+dependencies: {  }
+id: news_collection_paragraph
+label: 'News collection Paragraph'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,22 @@
+uuid: 4a779704-ea12-4cc9-824f-784fce05dbbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news_collection_block
+    - paragraphs.paragraphs_type.news_collection_paragraph
+  module:
+    - block_field
+id: paragraph.news_collection_paragraph.field_news_collection_block
+field_name: field_news_collection_block
+entity_type: paragraph
+bundle: news_collection_paragraph
+label: 'News collection block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids: {  }
+field_type: block_field

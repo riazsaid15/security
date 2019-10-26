@@ -1,0 +1,19 @@
+uuid: 87aa2afb-8ccd-40ba-aea3-ba09be485e9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_field
+    - paragraphs
+id: paragraph.field_contact_us_map
+field_name: field_contact_us_map
+entity_type: paragraph
+type: block_field
+settings: {  }
+module: block_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

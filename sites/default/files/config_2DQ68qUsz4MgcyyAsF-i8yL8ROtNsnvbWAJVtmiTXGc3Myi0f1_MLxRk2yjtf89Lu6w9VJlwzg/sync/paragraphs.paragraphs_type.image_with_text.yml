@@ -1,0 +1,9 @@
+uuid: a6fa2836-62a4-4ffd-a76d-afda6f03c8d0
+langcode: en
+status: true
+dependencies: {  }
+id: image_with_text
+label: 'image with text'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

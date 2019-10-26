@@ -1,0 +1,9 @@
+uuid: 5d2d6110-9d1c-4053-96f9-39eb073ab2e4
+langcode: en
+status: true
+dependencies: {  }
+id: latest_accordion
+label: 'Latest Accordion'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

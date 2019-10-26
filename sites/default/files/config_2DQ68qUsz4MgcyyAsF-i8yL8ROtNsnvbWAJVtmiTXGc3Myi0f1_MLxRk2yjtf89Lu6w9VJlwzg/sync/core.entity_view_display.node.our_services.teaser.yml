@@ -1,0 +1,22 @@
+uuid: d7d38e40-1a14-4ef1-839c-82459e829a1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.our_services.field_services_banner
+    - node.type.our_services
+  module:
+    - user
+id: node.our_services.teaser
+targetEntityType: node
+bundle: our_services
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_services_banner: true

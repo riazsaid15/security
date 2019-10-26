@@ -1,0 +1,21 @@
+uuid: 59528d86-95e8-497a-ab7d-18509edc16ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_latest_title
+    - paragraphs.paragraphs_type.latest_accordion
+  module:
+    - text
+id: paragraph.latest_accordion.field_latest_title
+field_name: field_latest_title
+entity_type: paragraph
+bundle: latest_accordion
+label: latest_title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,22 @@
+uuid: eaeaa072-2308-41af-bbde-c5c6ad558641
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.services_collection.field_services_collection_banner
+    - node.type.services_collection
+  module:
+    - user
+id: node.services_collection.teaser
+targetEntityType: node
+bundle: services_collection
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_services_collection_banner: true

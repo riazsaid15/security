@@ -1,0 +1,40 @@
+uuid: 396af172-972d-45ae-ac4c-e2a7f73eaaa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_collection_paragraph.field_news_collection_block
+    - field.field.paragraph.news_collection_paragraph.field_news_collection_view
+    - paragraphs.paragraphs_type.news_collection_paragraph
+  module:
+    - block_field
+    - paragraphs
+id: paragraph.news_collection_paragraph.default
+targetEntityType: paragraph
+bundle: news_collection_paragraph
+mode: default
+content:
+  field_news_collection_block:
+    weight: 0
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+  field_news_collection_view:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

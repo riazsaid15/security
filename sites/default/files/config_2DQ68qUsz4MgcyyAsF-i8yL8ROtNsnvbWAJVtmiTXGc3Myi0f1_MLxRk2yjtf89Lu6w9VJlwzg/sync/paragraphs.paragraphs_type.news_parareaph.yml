@@ -1,0 +1,9 @@
+uuid: 788c521b-b558-4386-80bc-c81f9ab95777
+langcode: en
+status: true
+dependencies: {  }
+id: news_parareaph
+label: news_parareaph
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,34 @@
+uuid: 5bd03d28-dfac-492e-b556-2e37b55b5862
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_logo
+    - field.field.block_content.footer_logo.body
+    - field.field.block_content.footer_logo.field_footer_logo
+    - image.style.medium
+  module:
+    - image
+    - text
+id: block_content.footer_logo.default
+targetEntityType: block_content
+bundle: footer_logo
+mode: default
+content:
+  body:
+    label: visually_hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_footer_logo:
+    weight: 0
+    label: visually_hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

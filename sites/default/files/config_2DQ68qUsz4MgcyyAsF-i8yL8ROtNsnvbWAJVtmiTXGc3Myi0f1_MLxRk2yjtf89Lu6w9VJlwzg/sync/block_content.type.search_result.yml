@@ -1,0 +1,8 @@
+uuid: e40780c2-c29a-446c-909b-874b9f6ab237
+langcode: en
+status: true
+dependencies: {  }
+id: search_result
+label: 'Search Result'
+revision: 0
+description: 'This Block Appear on Search Result '

@@ -1,0 +1,36 @@
+uuid: 5bde8472-f3a1-43a4-9965-58ec31644cf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_page_banner.field_banner_image
+    - field.field.paragraph.content_page_banner.field_banner_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.content_page_banner
+  module:
+    - image
+    - text
+id: paragraph.content_page_banner.default
+targetEntityType: paragraph
+bundle: content_page_banner
+mode: default
+content:
+  field_banner_image:
+    weight: 1
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_banner_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true

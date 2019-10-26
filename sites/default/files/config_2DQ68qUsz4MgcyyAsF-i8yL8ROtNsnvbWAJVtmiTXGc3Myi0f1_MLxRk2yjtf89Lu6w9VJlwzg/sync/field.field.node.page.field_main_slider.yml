@@ -1,0 +1,62 @@
+uuid: df033a9e-2812-4983-a199-7d8eee64d36f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_slider
+    - node.type.page
+  module:
+    - viewsreference
+id: node.page.field_main_slider
+field_name: field_main_slider
+entity_type: node
+bundle: page
+label: 'Main Slider'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    entity_browser: 0
+    feed: 0
+  preselect_views:
+    accordion_services: 0
+    accordion_view: 0
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    files: 0
+    files_entity_browser: 0
+    footer_services: 0
+    frontpage: 0
+    geolocation_demo_boundary_filter_fixed_values: 0
+    geolocation_demo_proximity_argument_and_sort: 0
+    geolocation_demo_proximity_by_entity_argument: 0
+    latest_newss: 0
+    main_slider: 0
+    media: 0
+    media_entity_browser: 0
+    media_entity_browser_media_library: 0
+    media_library: 0
+    news: 0
+    nodes_entity_browser: 0
+    other_news: 0
+    our_awards: 0
+    service_collection_view: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+field_type: viewsreference

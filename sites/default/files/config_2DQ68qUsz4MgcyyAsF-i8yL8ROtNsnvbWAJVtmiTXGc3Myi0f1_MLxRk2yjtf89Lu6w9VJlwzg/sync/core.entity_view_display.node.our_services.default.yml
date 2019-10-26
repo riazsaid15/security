@@ -1,0 +1,36 @@
+uuid: 01f00449-3f34-48c1-8e8a-ee06beb03257
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.our_services.field_services_banner
+    - field.field.node.our_services.field_services_content
+    - node.type.our_services
+  module:
+    - entity_reference_revisions
+    - user
+id: node.our_services.default
+targetEntityType: node
+bundle: our_services
+mode: default
+content:
+  field_services_banner:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_services_content:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true

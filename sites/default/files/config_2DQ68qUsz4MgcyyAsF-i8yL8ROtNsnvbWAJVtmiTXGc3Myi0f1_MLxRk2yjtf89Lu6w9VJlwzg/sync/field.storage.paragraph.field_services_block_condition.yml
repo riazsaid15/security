@@ -1,0 +1,27 @@
+uuid: 2e24b4fd-42f4-4cf0-8089-16f746e4ec4c
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_services_block_condition
+field_name: field_services_block_condition
+entity_type: paragraph
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: left
+    -
+      value: 1
+      label: right
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,55 @@
+uuid: 17f4dd34-6592-485a-be4a-c1ddc0a45d70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_banner
+    - node.type.page
+    - paragraphs.paragraphs_type.hero_image
+  module:
+    - entity_reference_revisions
+id: node.page.field_hero_banner
+field_name: field_hero_banner
+entity_type: node
+bundle: page
+label: hero_banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      hero_image: hero_image
+    target_bundles_drag_drop:
+      content_body:
+        weight: 12
+        enabled: false
+      content_image:
+        weight: 13
+        enabled: false
+      content_title:
+        weight: 14
+        enabled: false
+      cta:
+        weight: 15
+        enabled: false
+      image_with_text:
+        weight: 17
+        enabled: false
+      news_parareaph:
+        weight: 18
+        enabled: false
+      bp_image:
+        weight: 26
+        enabled: false
+      bp_view:
+        weight: 31
+        enabled: false
+      hero_image:
+        enabled: true
+        weight: 32
+field_type: entity_reference_revisions

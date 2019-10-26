@@ -1,0 +1,31 @@
+uuid: da272e70-b9f4-41e9-89ba-19801aa93c8a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - security
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: security_page_title
+theme: security
+region: content
+weight: -11
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      hero_slide: hero_slide
+      our_services: our_services
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

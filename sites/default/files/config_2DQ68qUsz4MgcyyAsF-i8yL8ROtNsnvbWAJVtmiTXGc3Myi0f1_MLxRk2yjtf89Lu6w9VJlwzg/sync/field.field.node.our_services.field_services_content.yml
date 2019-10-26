@@ -1,0 +1,58 @@
+uuid: f7c25aec-fd46-4e2f-a1d8-5012c02155d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_services_content
+    - node.type.our_services
+    - paragraphs.paragraphs_type.news_parareaph
+  module:
+    - entity_reference_revisions
+id: node.our_services.field_services_content
+field_name: field_services_content
+entity_type: node
+bundle: our_services
+label: 'Services content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      news_parareaph: news_parareaph
+    target_bundles_drag_drop:
+      contact_us_details:
+        weight: 11
+        enabled: false
+      content_image:
+        weight: 12
+        enabled: false
+      content_page_banner:
+        weight: 13
+        enabled: false
+      cta:
+        weight: 14
+        enabled: false
+      hero_image:
+        weight: 15
+        enabled: false
+      image_with_text:
+        weight: 16
+        enabled: false
+      latest_accordion:
+        weight: 17
+        enabled: false
+      news_collection_paragraph:
+        weight: 18
+        enabled: false
+      news_parareaph:
+        enabled: true
+        weight: 19
+      views_paragraph:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

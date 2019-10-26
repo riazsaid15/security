@@ -1,0 +1,22 @@
+uuid: f952bf0e-16aa-4ff7-81b6-745333148bef
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - security
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: security_messages
+theme: security
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

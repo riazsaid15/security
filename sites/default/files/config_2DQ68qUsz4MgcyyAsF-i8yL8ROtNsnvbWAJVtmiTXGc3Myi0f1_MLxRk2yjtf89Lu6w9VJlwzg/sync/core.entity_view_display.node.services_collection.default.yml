@@ -1,0 +1,36 @@
+uuid: 3aa21789-29a9-4806-b2fd-06ba8300fcfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.services_collection.field_service_collection_view
+    - field.field.node.services_collection.field_services_collection_banner
+    - node.type.services_collection
+  module:
+    - entity_reference_revisions
+    - user
+id: node.services_collection.default
+targetEntityType: node
+bundle: services_collection
+mode: default
+content:
+  field_service_collection_view:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_services_collection_banner:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true

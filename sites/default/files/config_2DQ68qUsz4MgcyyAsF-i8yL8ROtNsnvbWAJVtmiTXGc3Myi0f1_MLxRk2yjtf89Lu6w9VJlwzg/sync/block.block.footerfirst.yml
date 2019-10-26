@@ -1,0 +1,25 @@
+uuid: 026da0b3-9f2d-4814-b419-8fdc556f1216
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_logo:64c6c0cd-2d32-477d-aa69-03879f1a70ca'
+  module:
+    - block_content
+  theme:
+    - security
+id: footerfirst
+theme: security
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:64c6c0cd-2d32-477d-aa69-03879f1a70ca'
+settings:
+  id: 'block_content:64c6c0cd-2d32-477d-aa69-03879f1a70ca'
+  label: 'Footer First'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,47 @@
+uuid: 3066abdf-4005-41cd-95fa-00f65f3cbf2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hero_slide.body
+    - field.field.node.hero_slide.field_hero_image
+    - field.field.node.hero_slide.field_hero_title
+    - node.type.hero_slide
+  module:
+    - image
+    - text
+    - user
+id: node.hero_slide.default
+targetEntityType: node
+bundle: hero_slide
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_hero_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_hero_title:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

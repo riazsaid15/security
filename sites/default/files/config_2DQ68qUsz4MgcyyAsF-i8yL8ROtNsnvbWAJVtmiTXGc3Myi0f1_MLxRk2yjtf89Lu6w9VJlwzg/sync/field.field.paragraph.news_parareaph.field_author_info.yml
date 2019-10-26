@@ -1,0 +1,70 @@
+uuid: c12c4c09-3619-4406-9540-05dd38851bd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_author_info
+    - paragraphs.paragraphs_type.news_parareaph
+    - views.view.author_info
+  module:
+    - viewsreference
+id: paragraph.news_parareaph.field_author_info
+field_name: field_author_info
+entity_type: paragraph
+bundle: news_parareaph
+label: 'Author info'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    options:
+      title: 0
+      argument: ''
+    display_id: block_1
+    argument: null
+    title: 0
+    data: null
+    target_uuid: badf869f-b4c7-4d25-b1b1-2e485dc9ec25
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    entity_browser: 0
+    feed: 0
+  preselect_views:
+    accordion_services: 0
+    accordion_view: 0
+    author_info: 0
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    files: 0
+    files_entity_browser: 0
+    footer_services: 0
+    frontpage: 0
+    latest_newss: 0
+    main_slider: 0
+    media: 0
+    media_entity_browser: 0
+    media_entity_browser_media_library: 0
+    media_library: 0
+    news: 0
+    nodes_entity_browser: 0
+    other_news: 0
+    our_awards: 0
+    service_collection_view: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+field_type: viewsreference

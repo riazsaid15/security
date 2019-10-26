@@ -1,0 +1,21 @@
+uuid: 58a7ab82-29d0-490c-b156-c2333a10efa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner_title
+    - paragraphs.paragraphs_type.content_page_banner
+  module:
+    - text
+id: paragraph.content_page_banner.field_banner_title
+field_name: field_banner_title
+entity_type: paragraph
+bundle: content_page_banner
+label: banner_title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

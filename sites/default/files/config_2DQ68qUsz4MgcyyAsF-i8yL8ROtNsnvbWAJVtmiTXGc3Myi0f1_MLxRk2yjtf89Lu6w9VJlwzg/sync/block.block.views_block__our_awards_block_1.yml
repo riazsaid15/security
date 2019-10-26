@@ -1,0 +1,32 @@
+uuid: a747c7dd-68d3-4498-9b2a-05fdd7d50a0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.our_awards
+  module:
+    - node
+    - views
+  theme:
+    - security
+id: views_block__our_awards_block_1
+theme: security
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:our_awards-block_1'
+settings:
+  id: 'views_block:our_awards-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

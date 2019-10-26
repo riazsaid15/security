@@ -1,0 +1,38 @@
+uuid: 3e424a13-0938-48ea-b4a0-e558b1737a15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_us_details.field_contact_us_address
+    - field.field.paragraph.contact_us_details.field_contact_us_form
+    - field.field.paragraph.contact_us_details.field_contact_us_map
+    - paragraphs.paragraphs_type.contact_us_details
+  module:
+    - block_field
+id: paragraph.contact_us_details.default
+targetEntityType: paragraph
+bundle: contact_us_details
+mode: default
+content:
+  field_contact_us_address:
+    weight: 1
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+  field_contact_us_form:
+    weight: 0
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+  field_contact_us_map:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+hidden: {  }

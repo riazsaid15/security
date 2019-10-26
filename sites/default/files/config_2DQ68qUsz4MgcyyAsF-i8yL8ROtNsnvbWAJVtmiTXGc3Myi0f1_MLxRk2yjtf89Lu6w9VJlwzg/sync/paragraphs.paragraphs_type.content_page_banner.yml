@@ -1,0 +1,9 @@
+uuid: 33c89ca6-c7c8-43e4-bd8e-d78c2ec3a943
+langcode: en
+status: true
+dependencies: {  }
+id: content_page_banner
+label: content_page_banner
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

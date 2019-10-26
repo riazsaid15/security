@@ -1,0 +1,26 @@
+uuid: b115aa9b-3828-4696-9b0d-1ede9962e660
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.views_paragraph.field_view_paragraph
+    - paragraphs.paragraphs_type.views_paragraph
+  module:
+    - viewsreference
+id: paragraph.views_paragraph.default
+targetEntityType: paragraph
+bundle: views_paragraph
+mode: default
+content:
+  field_view_paragraph:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: '60'
+      placeholder: ''
+    third_party_settings: {  }
+    type: viewsreference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

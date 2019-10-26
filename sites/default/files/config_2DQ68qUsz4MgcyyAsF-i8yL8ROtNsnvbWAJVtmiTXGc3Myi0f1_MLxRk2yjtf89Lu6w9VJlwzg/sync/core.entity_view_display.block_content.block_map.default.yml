@@ -1,0 +1,49 @@
+uuid: 15c7bfe8-d362-441b-9e5a-413a4581a29e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_map
+    - field.field.block_content.block_map.body
+    - field.field.block_content.block_map.field_location
+    - filter.format.basic_html
+  module:
+    - geolocation
+    - text
+id: block_content.block_map.default
+targetEntityType: block_content
+bundle: block_map
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_location:
+    weight: 1
+    label: above
+    settings:
+      title: ''
+      set_marker: '1'
+      common_map: '1'
+      data_provider_settings: {  }
+      map_provider_id: google_maps
+      centre:
+        fit_bounds:
+          enable: true
+          weight: -101
+          map_center_id: fit_bounds
+          settings:
+            reset_zoom: true
+      map_provider_settings: {  }
+      info_text:
+        value: ''
+        format: basic_html
+      use_overridden_map_settings: 0
+    third_party_settings: {  }
+    type: geolocation_map
+    region: content
+hidden: {  }

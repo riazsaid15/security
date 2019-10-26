@@ -1,0 +1,55 @@
+uuid: 6454744a-2532-42db-bc14-2a777e41599f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.latest_accordion.field_accordion_title
+    - field.field.paragraph.latest_accordion.field_accordion_view
+    - field.field.paragraph.latest_accordion.field_latest_title
+    - field.field.paragraph.latest_accordion.field_latest_views
+    - paragraphs.paragraphs_type.latest_accordion
+  module:
+    - text
+    - viewsreference
+id: paragraph.latest_accordion.default
+targetEntityType: paragraph
+bundle: latest_accordion
+mode: default
+content:
+  field_accordion_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_accordion_view:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: '60'
+      placeholder: ''
+    third_party_settings: {  }
+    type: viewsreference_autocomplete
+    region: content
+  field_latest_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_latest_views:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: '60'
+      placeholder: ''
+    third_party_settings: {  }
+    type: viewsreference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,21 @@
+uuid: fcf7d589-3837-40c1-84f2-c799a440c7cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accordion_title
+    - paragraphs.paragraphs_type.latest_accordion
+  module:
+    - text
+id: paragraph.latest_accordion.field_accordion_title
+field_name: field_accordion_title
+entity_type: paragraph
+bundle: latest_accordion
+label: 'accordion title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

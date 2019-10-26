@@ -1,0 +1,15 @@
+uuid: 60314a52-e3bc-49ed-9361-fea1362abaf8
+name: security
+mail: riazsaid15@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: /node/142
+  front: /node/7
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+mail_notification: ''

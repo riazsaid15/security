@@ -1,0 +1,22 @@
+uuid: 806786d5-a724-45f0-86ae-2e9227f1ec2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.hero_slide
+  module:
+    - text
+id: node.hero_slide.body
+field_name: body
+entity_type: node
+bundle: hero_slide
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

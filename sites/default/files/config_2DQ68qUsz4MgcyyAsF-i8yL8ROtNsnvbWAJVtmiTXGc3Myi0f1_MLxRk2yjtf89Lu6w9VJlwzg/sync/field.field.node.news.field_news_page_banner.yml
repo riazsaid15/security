@@ -1,0 +1,55 @@
+uuid: 528c2074-30e5-454c-ab19-1f88c88177d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_page_banner
+    - node.type.news
+    - paragraphs.paragraphs_type.content_page_banner
+  module:
+    - entity_reference_revisions
+id: node.news.field_news_page_banner
+field_name: field_news_page_banner
+entity_type: node
+bundle: news
+label: 'news page banner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      content_page_banner: content_page_banner
+    target_bundles_drag_drop:
+      content_body:
+        weight: 10
+        enabled: false
+      content_image:
+        weight: 11
+        enabled: false
+      content_page_banner:
+        enabled: true
+        weight: 12
+      content_title:
+        weight: 13
+        enabled: false
+      cta:
+        weight: 14
+        enabled: false
+      hero_image:
+        weight: 15
+        enabled: false
+      image_with_text:
+        weight: 16
+        enabled: false
+      news_parareaph:
+        weight: 17
+        enabled: false
+      views_paragraph:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

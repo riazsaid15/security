@@ -1,0 +1,29 @@
+uuid: b0911451-c667-40d7-b0e9-fbf6bd71c63a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_user_page
+    - field.field.user.user.user_picture
+  module:
+    - entity_reference_revisions
+    - user
+_core:
+  default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_user_page:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+hidden:
+  member_for: true
+  user_picture: true

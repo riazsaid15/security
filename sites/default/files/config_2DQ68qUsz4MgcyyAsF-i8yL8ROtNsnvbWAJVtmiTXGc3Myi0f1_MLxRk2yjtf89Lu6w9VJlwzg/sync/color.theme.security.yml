@@ -1,0 +1,18 @@
+palette:
+  top: '#FFC107'
+  bottom: '#FEAC00'
+  bg: '#ffffff'
+  sidebar: '#f6f6f2'
+  sidebarborders: '#f9f9f9'
+  footer: '#292929'
+  button: '#FFC107'
+  buttonhover: '#FEAC00'
+  titleslogan: '#fffeff'
+  text: '#3b3b3b'
+  link: '#000000'
+logo: 'public://color/security-8f941a74/logo.svg'
+stylesheets:
+  - 'public://color/security-8f941a74/colors.css'
+files:
+  - 'public://color/security-8f941a74/logo.svg'
+  - 'public://color/security-8f941a74/colors.css'

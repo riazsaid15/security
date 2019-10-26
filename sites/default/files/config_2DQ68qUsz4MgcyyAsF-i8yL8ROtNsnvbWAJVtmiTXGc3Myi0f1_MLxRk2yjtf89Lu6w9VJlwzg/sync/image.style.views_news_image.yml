@@ -1,0 +1,15 @@
+uuid: 204a171e-37c0-4808-a902-a3b6fa693509
+langcode: en
+status: true
+dependencies: {  }
+name: views_news_image
+label: views-news-image
+effects:
+  54e3283e-748a-4eb0-a109-037f2def2a3e:
+    uuid: 54e3283e-748a-4eb0-a109-037f2def2a3e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 100
+      anchor: center-center

@@ -1,0 +1,24 @@
+uuid: 56baa859-b720-4c43-8c67-727351540725
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.search_result
+    - field.field.block_content.search_result.field_search_
+  module:
+    - entity_reference_revisions
+id: block_content.search_result.default
+targetEntityType: block_content
+bundle: search_result
+mode: default
+content:
+  field_search_:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,54 @@
+uuid: c0e63f48-38f2-4019-8497-b5c2aa98c4d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_latest_views
+    - paragraphs.paragraphs_type.latest_accordion
+  module:
+    - viewsreference
+id: paragraph.latest_accordion.field_latest_views
+field_name: field_latest_views
+entity_type: paragraph
+bundle: latest_accordion
+label: 'latest views'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    entity_browser: 0
+    feed: 0
+  preselect_views:
+    accordion_view: 0
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    files: 0
+    files_entity_browser: 0
+    frontpage: 0
+    latest_newss: 0
+    media: 0
+    media_entity_browser: 0
+    media_entity_browser_media_library: 0
+    media_library: 0
+    nodes_entity_browser: 0
+    other_news: 0
+    our_awards: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+field_type: viewsreference

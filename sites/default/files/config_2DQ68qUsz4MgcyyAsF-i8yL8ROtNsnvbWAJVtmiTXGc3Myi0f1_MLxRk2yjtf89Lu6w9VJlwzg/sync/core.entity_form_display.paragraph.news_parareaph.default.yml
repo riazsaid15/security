@@ -1,0 +1,88 @@
+uuid: 0aaec3a9-cbe3-4a03-a457-13136069566d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_parareaph.field_author_info
+    - field.field.paragraph.news_parareaph.field_contact_block
+    - field.field.paragraph.news_parareaph.field_content_pic
+    - field.field.paragraph.news_parareaph.field_contents_body
+    - field.field.paragraph.news_parareaph.field_contents_title
+    - field.field.paragraph.news_parareaph.field_services_block_condition
+    - field.field.paragraph.news_parareaph.field_views_paragraph
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.news_parareaph
+  module:
+    - block_field
+    - image
+    - paragraphs
+    - text
+    - viewsreference
+id: paragraph.news_parareaph.default
+targetEntityType: paragraph
+bundle: news_parareaph
+mode: default
+content:
+  field_author_info:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: '60'
+      placeholder: ''
+    third_party_settings: {  }
+    type: viewsreference_autocomplete
+    region: content
+  field_contact_block:
+    weight: 5
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+  field_content_pic:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_contents_body:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_contents_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_services_block_condition:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_views_paragraph:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

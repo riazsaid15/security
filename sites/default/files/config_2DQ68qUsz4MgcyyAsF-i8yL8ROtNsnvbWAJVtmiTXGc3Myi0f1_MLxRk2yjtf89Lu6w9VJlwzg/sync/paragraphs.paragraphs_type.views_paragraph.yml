@@ -1,0 +1,9 @@
+uuid: bd17641e-15bb-4f76-bf7b-e60027d5a3c5
+langcode: en
+status: true
+dependencies: {  }
+id: views_paragraph
+label: 'Views Paragraph'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

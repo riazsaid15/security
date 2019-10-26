@@ -1,0 +1,15 @@
+uuid: b28f7fe8-7a16-4fc6-8f18-53f76ad59b8e
+langcode: en
+status: true
+dependencies: {  }
+name: logo_res
+label: logo-res
+effects:
+  331258b6-f8af-4d78-998a-701ef8b73e7a:
+    uuid: 331258b6-f8af-4d78-998a-701ef8b73e7a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      anchor: center-center

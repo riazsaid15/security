@@ -1,0 +1,22 @@
+uuid: 70bbdab5-9806-41fb-ac73-eb040583ae81
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page_not_found.field_page_not_found
+    - node.type.page_not_found
+  module:
+    - user
+id: node.page_not_found.teaser
+targetEntityType: node
+bundle: page_not_found
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_page_not_found: true

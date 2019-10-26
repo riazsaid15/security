@@ -1,0 +1,58 @@
+uuid: a5af1d09-1558-45dd-a994-7326930287a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_page
+    - paragraphs.paragraphs_type.content_page_banner
+  module:
+    - entity_reference_revisions
+    - user
+id: user.user.field_user_page
+field_name: field_user_page
+entity_type: user
+bundle: user
+label: 'user page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      content_page_banner: content_page_banner
+    target_bundles_drag_drop:
+      contact_us_details:
+        weight: 11
+        enabled: false
+      content_image:
+        weight: 12
+        enabled: false
+      content_page_banner:
+        enabled: true
+        weight: 13
+      cta:
+        weight: 14
+        enabled: false
+      hero_image:
+        weight: 15
+        enabled: false
+      image_with_text:
+        weight: 16
+        enabled: false
+      latest_accordion:
+        weight: 17
+        enabled: false
+      news_collection_paragraph:
+        weight: 18
+        enabled: false
+      news_parareaph:
+        weight: 19
+        enabled: false
+      views_paragraph:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,31 @@
+uuid: 9bc197ae-000b-49e1-937d-74a91aa19fc1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:search_result:8647a4ea-ae5a-467e-81bf-6494652fcf03'
+  module:
+    - block_content
+    - system
+  theme:
+    - security
+id: searchresult
+theme: security
+region: content
+weight: -12
+provider: null
+plugin: 'block_content:8647a4ea-ae5a-467e-81bf-6494652fcf03'
+settings:
+  id: 'block_content:8647a4ea-ae5a-467e-81bf-6494652fcf03'
+  label: 'Search Result'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search/node*\r\n/search/user"
+    negate: false
+    context_mapping: {  }

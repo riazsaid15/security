@@ -1,0 +1,21 @@
+uuid: d5e2aefe-937d-4da8-99df-dd10e129c545
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_titlte
+    - paragraphs.paragraphs_type.hero_image
+  module:
+    - text
+id: paragraph.hero_image.field_hero_titlte
+field_name: field_hero_titlte
+entity_type: paragraph
+bundle: hero_image
+label: Hero_Titlte
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

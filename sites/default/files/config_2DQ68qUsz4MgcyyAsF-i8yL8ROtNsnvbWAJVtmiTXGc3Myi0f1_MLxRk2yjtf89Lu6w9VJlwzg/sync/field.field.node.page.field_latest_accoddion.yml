@@ -1,0 +1,58 @@
+uuid: bdd9405d-9837-4b2a-bca7-77d717043a08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_latest_accoddion
+    - node.type.page
+    - paragraphs.paragraphs_type.latest_accordion
+  module:
+    - entity_reference_revisions
+id: node.page.field_latest_accoddion
+field_name: field_latest_accoddion
+entity_type: node
+bundle: page
+label: 'Latest & Accoddion'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      latest_accordion: latest_accordion
+    target_bundles_drag_drop:
+      content_body:
+        weight: 11
+        enabled: false
+      content_image:
+        weight: 12
+        enabled: false
+      content_page_banner:
+        weight: 13
+        enabled: false
+      content_title:
+        weight: 14
+        enabled: false
+      cta:
+        weight: 15
+        enabled: false
+      hero_image:
+        weight: 16
+        enabled: false
+      image_with_text:
+        weight: 17
+        enabled: false
+      latest_accordion:
+        enabled: true
+        weight: 18
+      news_parareaph:
+        weight: 19
+        enabled: false
+      views_paragraph:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

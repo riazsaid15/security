@@ -1,0 +1,21 @@
+uuid: 8137cdb6-cbeb-4733-8fda-c227dcfbabf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_about_body
+    - paragraphs.paragraphs_type.image_with_text
+  module:
+    - text
+id: paragraph.image_with_text.field_about_body
+field_name: field_about_body
+entity_type: paragraph
+bundle: image_with_text
+label: 'about body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,8 @@
+uuid: 4d979f1d-6d95-4080-93a2-5debf6495fdb
+langcode: en
+status: true
+dependencies: {  }
+id: simple_gmap
+label: 'simple gmap'
+revision: 0
+description: ''

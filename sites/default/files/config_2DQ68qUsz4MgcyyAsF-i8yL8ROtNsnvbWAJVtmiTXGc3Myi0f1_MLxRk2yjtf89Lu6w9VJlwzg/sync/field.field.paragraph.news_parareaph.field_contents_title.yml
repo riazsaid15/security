@@ -1,0 +1,21 @@
+uuid: 35f86987-3a0c-4918-92b1-067111e424e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contents_title
+    - paragraphs.paragraphs_type.news_parareaph
+  module:
+    - text
+id: paragraph.news_parareaph.field_contents_title
+field_name: field_contents_title
+entity_type: paragraph
+bundle: news_parareaph
+label: 'Contents Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,24 @@
+uuid: 913a65a6-7ed3-448b-97ff-152667894268
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.accordion.body
+    - node.type.accordion
+  module:
+    - text
+    - user
+id: node.accordion.default
+targetEntityType: node
+bundle: accordion
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true

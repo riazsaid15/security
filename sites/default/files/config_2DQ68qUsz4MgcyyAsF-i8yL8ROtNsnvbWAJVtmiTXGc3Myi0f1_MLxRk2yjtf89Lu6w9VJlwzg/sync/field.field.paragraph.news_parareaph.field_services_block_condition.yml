@@ -1,0 +1,23 @@
+uuid: c7415fa8-f9a3-4cc0-acd1-edb8f9aae958
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_services_block_condition
+    - paragraphs.paragraphs_type.news_parareaph
+  module:
+    - options
+id: paragraph.news_parareaph.field_services_block_condition
+field_name: field_services_block_condition
+entity_type: paragraph
+bundle: news_parareaph
+label: 'services Block condition'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

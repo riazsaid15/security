@@ -1,0 +1,43 @@
+uuid: efac111e-203e-4dab-8bc2-48e2f950f385
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_logo
+    - field.field.block_content.footer_logo.body
+    - field.field.block_content.footer_logo.field_footer_logo
+    - image.style.logo_res
+  module:
+    - image
+    - text
+id: block_content.footer_logo.default
+targetEntityType: block_content
+bundle: footer_logo
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_footer_logo:
+    weight: 1
+    settings:
+      preview_image_style: logo_res
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
